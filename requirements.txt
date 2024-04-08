@@ -1,10 +1,4 @@
 flask
-icc_rt
-keras
-keras-applications
-keras-preprocessing
-pillow
-pip
-requests
-tensorflow
-tensorflow-estimator
+tensorflow==2.15.0
+numpy
+Pillow
