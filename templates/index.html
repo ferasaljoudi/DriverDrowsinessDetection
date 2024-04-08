@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .header {
+            background-color: #8292dd;
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .content-box {
+            border: 2px solid #007bff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .predict-form {
+            max-width: 500px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-md-6 {
+            padding: auto;
+            margin: auto;
+        }
+        body {
+            padding-top: 30px;
+            background-color: #e4e9f7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Driver Drowsiness Detection</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Model Description Column -->
+        <div class="col-md-6">
+            <br>
+            <div class="content-box">
+                <h3 class="text-center">Model Description</h3>
+                <br>
+                <p>This prediction is powered by a custom-trained convolutional neural network (CNN) model designed to accurately classify states of driver alertness. Key features of the model include:</p>
+                <ul>
+                    <li><strong>Pre-Trained VGG16 Base:</strong> Utilizes the VGG16 architecture as a starting point, leveraging transfer learning for enhanced feature extraction.</li>
+                    <li><strong>Custom Top Layers:</strong> Additional dense layers are added on top of the VGG16 base to tailor the model to our specific classification tasks.</li>
+                    <li><strong>Four-Class Classification:</strong> The model distinguishes between four different classes: "Open", "Close", "Yawn", and "No Yawn", aiding in the detection of drowsiness and attentiveness.</li>
+                    <li><strong>High Accuracy:</strong> Achieved an accuracy of over 90% on the validation set during training, indicating strong predictive performance.</li>
+                </ul>
+                <p>This model represents a significant step forward in the application of artificial intelligence for improving road safety and preventing accidents due to driver fatigue.</p>
+            </div>
+        </div>
+        
+        <!-- Prediction Form Column -->
+        <div class="col-md-6">
+            
+            <div class="form-container">
+                <div class="content-box">
+                    <h3 class="text-center">Testing the model</h3>
+                    <br>
+                    <form class="predict-form" action='/' method="post" enctype="multipart/form-data">
+                        <div class="input-group mb-3 justify-content-center">
+                            <input type="file" class="form-control" name="imagefile">
+                            <button class="btn btn-primary" type="submit">Predict Image</button>
+                        </div>
+                    </form>
+                    {% if prediction %}
+                        <p class="text-center">The image file is: {{ prediction }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
