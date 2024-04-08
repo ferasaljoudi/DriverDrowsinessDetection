@@ -1,4 +1,3 @@
-_tflow_select
 abseil-cpp
 absl-py
 aiohttp
