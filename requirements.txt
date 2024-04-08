@@ -5,7 +5,6 @@ keras-applications
 keras-preprocessing
 pillow
 pip
-python
 requests
 tensorflow
 tensorflow-base
