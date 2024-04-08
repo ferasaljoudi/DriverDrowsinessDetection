@@ -7,5 +7,4 @@ pillow
 pip
 requests
 tensorflow
-tensorflow-base
 tensorflow-estimator
