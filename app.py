@@ -21,6 +21,9 @@ def hello_word():
 @app.route('/', methods=['POST'])
 def predict():
     imagefile= request.files['imagefile']
+    if 'imagefile' not in request.files or imagefile.filename == '':
+        # No image file was selected
+        return render_template('index.html', prediction='No image provided.')
     image_path = "./images/" + imagefile.filename
     imagefile.save(image_path)
 
@@ -45,7 +48,7 @@ def predict():
 
     # Make the prediction
     predicted_class, predicted_probability = predict_image(model, image_path, class_names)
-    classification = f"{imagefile.filename}, the predicted class is: {predicted_class}"
+    classification = f"The image file is: {imagefile.filename}, the predicted class is: {predicted_class}"
 
     return render_template('index.html', prediction=classification)
 
