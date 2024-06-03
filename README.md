@@ -15,7 +15,7 @@ This project was developed as part of ENSE-412, a Machine Learning course within
 <br>
 
 <div align="center">
-  <img src="Assets/DemoGif/driverDrowsinessDetection.gif" alt="Demo Gif">
+    <a href="#"><img src="Assets/DemoGif/driverDrowsinessDetection.gif" alt="Demo Gif"></a>
 </div>
 
 <br>
