@@ -8,6 +8,15 @@
 This project was developed as part of ENSE-412, a Machine Learning course within my engineering degree program. The Driver Drowsiness Detection System showcases the application of skills and knowledge acquired through my studies, reflecting a comprehensive approach to enhancing road safety by addressing the critical issue of driver fatigue.
 
 </div>
+<br>
+<div style="width: 100%;">
+    <a href="#"><img src="https://raw.githubusercontent.com/ferasaljoudi/AssetsRepository/main/BrownSVGs/demo.svg" alt="Demo" style="width: 100%"></a>
+</div>
+<br>
+
+<div align="center">
+  <img src="Assets/DemoGif/driverDrowsinessDetection.gif" alt="Demo Gif">
+</div>
 
 <br>
 <div style="width: 100%;">
