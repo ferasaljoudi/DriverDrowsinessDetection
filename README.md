@@ -8,6 +8,15 @@
 This project was developed as part of ENSE-412, a Machine Learning course within my engineering degree program. The Driver Drowsiness Detection System showcases the application of skills and knowledge acquired through my studies, reflecting a comprehensive approach to enhancing road safety by addressing the critical issue of driver fatigue.
 
 </div>
+
+<br>
+<div style="width: 100%;">
+    <a href="#"><img src="https://raw.githubusercontent.com/ferasaljoudi/AssetsRepository/main/BrownSVGs/overview.svg" alt="Overview" style="width: 100%"></a>
+</div>
+<br>
+
+This repository contains all the necessary components of the Driver Drowsiness Detection. This project aimed to  enhancing road safety by identifying signs of driver fatigue through image analysis. Utilizing machine learning algorithms and deep learning techniques, this system detects key fatigue indicators such as closed eyes and yawning.
+
 <br>
 <div style="width: 100%;">
     <a href="#"><img src="https://raw.githubusercontent.com/ferasaljoudi/AssetsRepository/main/BrownSVGs/demo.svg" alt="Demo" style="width: 100%"></a>
@@ -17,14 +26,6 @@ This project was developed as part of ENSE-412, a Machine Learning course within
 <div align="center">
     <a href="#"><img src="Assets/DemoGif/driverDrowsinessDetection.gif" alt="Demo Gif"></a>
 </div>
-
-<br>
-<div style="width: 100%;">
-    <a href="#"><img src="https://raw.githubusercontent.com/ferasaljoudi/AssetsRepository/main/BrownSVGs/overview.svg" alt="Overview" style="width: 100%"></a>
-</div>
-<br>
-
-This repository contains all the necessary components of the Driver Drowsiness Detection. This project aimed to  enhancing road safety by identifying signs of driver fatigue through image analysis. Utilizing machine learning algorithms and deep learning techniques, this system detects key fatigue indicators such as closed eyes and yawning.
 
 <br>
 <div style="width: 100%;">
